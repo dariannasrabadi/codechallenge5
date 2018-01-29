@@ -7,9 +7,17 @@
     <script src="/script/controllers/message.controller.js"></script>
     <script src="/script/service/message.service.js"></script>
 </head>
-<body>
-    <h1>Message Board</h1>
+<body ng-app="app">
+    <main ng-controller="MessageController as vm">
+        <h1>Message Board</h1>
+        <input type="text" ng-model="vm.message.name" placeholder="Name">
+        <input type="text" ng-model="vm.message.message" placeholder="Message">
+        <button ng-click="vm.submitMessage(vm.message)">Submit</button>
 
-    
+        <div>
+            <!-- NG-REPEAT whatever we get back here later. -->
+        </div>
+    </main>
+        
 </body>
 </html>

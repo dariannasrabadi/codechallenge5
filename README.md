@@ -1,12 +1,12 @@
 # Code Challenge 5
 
-- [ ] 2 inputs 
+- [x] 2 inputs 
     
     - user name
     
     - user message
 
-- [ ] submit button
+- [x] submit button
 
 - [ ] on click send name and message to mongo server database. 
 
