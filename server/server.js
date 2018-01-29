@@ -7,7 +7,7 @@ const messageRoute = require('./routes/messageboard.route.js');
 app.use(express.static('server/public/'));
 app.use(bodyParser.json());
 
-app.use('/message', messageRoute);
+app.use('/messages', messageRoute);
 
 
 

@@ -14,8 +14,8 @@
         <input type="text" ng-model="vm.message.message" placeholder="Message">
         <button ng-click="vm.submitMessage(vm.message)">Submit</button>
 
-        <div>
-            <!-- NG-REPEAT whatever we get back here later. -->
+        <div ng-repeat="message in vm.message.list">
+            <p>{{message.name}}: {{message.message}}</p>
         </div>
     </main>
         
